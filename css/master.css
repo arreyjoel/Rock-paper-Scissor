@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+#title{
+    background-color: #304FFE;
+    color: #fff;
+    margin: 0;
+    padding: 12px;
+    text-align: center;
+}
+ 
+ #choices, #play-button, #console{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #304FFE;
+}
+
+#choices{
+    display: grid;
+    grid-template-columns: 1fr 1fr;;
+}
+
+#user-play, #computer-play{
+    padding: 50px 0;
+    border: 1px solid #304FFE;
+}
+
+#user-play::before{
+    content: "User: ";
+    font-weight: bold;
+}
+
+#computer-play::before{
+    content: "Computer: ";
+    font-weight: bold;
+}
+
+#console{
+    padding: 16px 0;
+}
+
+#play-button{
+    background: #304FFE;
+    border-color: #304FFE;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px;
+}
