@@ -14,7 +14,7 @@ function userPlay(){
   var userChoise = "";
   while (true){
     userChoise = prompt("choose between rock, paper or scissors").toLowerCase();
-    if (userChoise !== "rock" || userChoise !== "paper" || userChoise !== "scissors"){
+    if (userChoise == "rock" || userChoise == "paper" || userChoise == "scissors"){
       // if it was a good option continue otherwise ask again;
       break;
     }
