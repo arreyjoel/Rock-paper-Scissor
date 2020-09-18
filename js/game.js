@@ -11,16 +11,16 @@ function computerPlay(){
 }
 
 function userPlay(){
-  var userChoise = "";
+  var userChoice = "";
   while (true){
-    userChoise = prompt("choose between rock, paper or scissors").toLowerCase();
-    if (userChoise == "rock" || userChoise == "paper" || userChoise == "scissors"){
+    userChoice = prompt("choose between rock, paper or scissors").toLowerCase();
+    if (userChoice == "rock" || userChoice == "paper" || userChoice == "scissors"){
       // if it was a good option continue otherwise ask again;
       break;
     }
   }
   
-  return userChoise;
+  return userChoice;
 }
 
 // to use instead console.log()
@@ -31,6 +31,8 @@ function log(msg){
 function play(){
   let userChoice = userPlay();
   let computerChoice = computerPlay();
+  document.getElementById("user-play").innerHTML = userChoice;
+  document.getElementById("computer-play").innerHTML = computerChoice;
   
   if(userChoice === computerChoice){
     log("It is a tie");
